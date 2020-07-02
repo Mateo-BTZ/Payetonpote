@@ -62,6 +62,17 @@ class CampaignController extends AbstractController
         ]);
     }
 
+        /**
+     * @Route("/{id}", name="payment", methods={"GET"})
+     */
+    public function payment(Campaign $campaign): Response
+    {
+        return $this->render('campaign/payment.html.twig', [
+            'campaign' => $campaign,
+
+        ]);
+    }
+
     /**
      * @Route("/{id}/edit", name="campaign_edit", methods={"GET","POST"})
      */

@@ -3,10 +3,13 @@
 {% block title %}New Campaign{% endblock %}
 
 {% block body %}
+
+    <div class="container">
     <h1>Create new Campaign</h1>
 
     {{ include('campaign/_form.html.twig') }}
 
     <a href="{{ path('campaign_index') }}">back to list</a>
+    </div>
 {% endblock %}
 
