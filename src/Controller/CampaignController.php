@@ -63,7 +63,7 @@ class CampaignController extends AbstractController
     }
 
         /**
-     * @Route("/{id}", name="payment", methods={"GET"})
+     * @Route("/payment/{id}", name="campaign_payment", methods={"GET"})
      */
     public function payment(Campaign $campaign): Response
     {

@@ -33,7 +33,7 @@
                             <input id="mount" type="number" class="validate">
                             <label for="mount">Votre participation</label>
                         </div>
-                        <a href="{{ path('payment') }}" class="btn-large waves-effect waves-light pink lighten-1 col s12 l6">Participer</a>
+                        <a href="{{ path('campaign_payment' , {'id': campaign.id}) }}" class="btn-large waves-effect waves-light pink lighten-1 col s12 l6">Participer</a>
                         <div class="clearfix"></div>
                     </div>
                 </div>
